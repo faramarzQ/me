@@ -1,0 +1,134 @@
+@charset "UTF-8";
+body {
+  color: white;
+  background-color: #1A1A1D;
+  width: 100% !important;
+  height: 100%;
+  position: relative;
+  /*** Works on common browsers ***/
+  /*** Mozilla based browsers ***/
+  /***For Other Browsers ***/
+  /*** For Webkit ***/
+}
+body:hover {
+  cursor: default;
+}
+body ::selection {
+  background-color: inherit;
+  color: #fff;
+}
+body ::-moz-selection {
+  background-color: inherit;
+  color: #fff;
+}
+body ::-o-selection {
+  background-color: inherit;
+  color: #fff;
+}
+body ::-ms-selection {
+  background-color: inherit;
+  color: #fff;
+}
+body ::-webkit-selection {
+  background-color: inherit;
+  color: #fff;
+}
+body .container {
+  margin-top: 80px;
+}
+body .font {
+  font-family: "Gloria Hallelujah", cursive;
+}
+body .font-main {
+  font-family: "Bad Script", cursive;
+}
+body .light-red {
+  color: #e7717d;
+}
+body .red {
+  color: #C3073F;
+}
+body .min-red {
+  color: #950740;
+}
+body .high-red {
+  color: #6F2232;
+}
+body .grey {
+  color: #4e4e50;
+}
+body ul {
+  list-style: none;
+}
+body li::before {
+  content: "•";
+  color: #950740;
+  padding-right: 9px;
+}
+body a {
+  color: white;
+}
+body header {
+  padding-top: 100px;
+  text-align: center;
+}
+body header .logo {
+  font-family: "Signika", sans-serif;
+  margin-top: 20px;
+  text-align: center;
+  margin: auto;
+}
+body header .logo h1 {
+  font-size: 5rem;
+}
+body header .logo #website {
+  transform: skew(-10deg, -10deg);
+}
+body .main-body {
+  font-size: 25px;
+  margin-top: 280px;
+  margin-bottom: 220px;
+}
+body .main-body .underline {
+  text-decoration: underline;
+}
+body .main-body h2 {
+  margin-top: 100px !important;
+}
+body .main-body ul {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+body .main-body .contact a,
+body .main-body .contact div {
+  display: block;
+  margin-top: 15px;
+}
+body footer {
+  background-color: black;
+  height: 10rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  color: #4e4e50;
+  margin-top: 100px;
+}
+body footer div {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  body header {
+    padding-top: 40px;
+  }
+  body header .logo h1 {
+    font-size: 3rem;
+  }
+  body .main-body {
+    margin-top: 130px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

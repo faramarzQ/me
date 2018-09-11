@@ -1,0 +1,163 @@
+body {
+  color: white;
+  background-color: #1A1A1D;
+  width: 100% !important;
+  height: 100%;
+  position: relative;
+
+  &:hover {
+    cursor: default;
+  }
+  /*** Works on common browsers ***/
+  ::selection {
+    background-color: inherit;
+    color: #fff;
+  }
+  /*** Mozilla based browsers ***/
+  ::-moz-selection {
+    background-color: inherit;
+    color: #fff;
+  }
+  /***For Other Browsers ***/
+  ::-o-selection {
+    background-color: inherit;
+    color: #fff;
+  }
+
+  ::-ms-selection {
+    background-color: inherit;
+    color: #fff;
+  }
+  /*** For Webkit ***/
+  ::-webkit-selection {
+    background-color: inherit;
+    color: #fff;
+  }
+
+  .container {
+    margin-top: 80px;
+  }
+
+  .font {
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+
+  .font-main {
+    font-family: 'Bad Script', cursive;
+  }
+
+  .light-red {
+    color: #e7717d;
+  }
+
+  .red {
+    color: #C3073F;
+  }
+
+  .min-red {
+    color: #950740;
+  }
+
+  .high-red {
+    color: #6F2232;
+  }
+
+  .grey {
+    color: #4e4e50;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li::before {
+    content: "•";
+    color: #950740;
+    padding-right: 9px;
+  }
+
+  a {
+    color: white;
+  }
+  // head1
+  header {
+    padding-top: 100px;
+    text-align: center;
+
+    .logo {
+      font-family: 'Signika', sans-serif;
+      margin-top: 20px;
+      text-align: center;
+      margin: auto;
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      #website {
+        transform: skew(-10deg, -10deg);
+      }
+    }
+  }
+  // main body
+  .main-body {
+    font-size: 25px;
+    margin-top: 280px;
+    margin-bottom: 220px;
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    h2 {
+      margin-top: 100px !important;
+    }
+
+    ul {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .contact {
+      a,
+      div {
+        display: block;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  // footer
+  footer {
+    background-color: black;
+    height: 10rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    color: #4e4e50;
+    margin-top: 100px;
+
+    div {
+      margin-top: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  body {
+    header {
+      padding-top: 40px;
+      .logo {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    .main-body {
+      margin-top: 130px;
+
+    }
+  }
+}
