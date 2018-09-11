@@ -129,6 +129,9 @@ body footer div {
   body .main-body {
     margin-top: 130px;
   }
+  body footer {
+    font-size: 20px; 
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
