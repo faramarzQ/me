@@ -35,6 +35,7 @@ body ::-webkit-selection {
 }
 body .container {
   margin-top: 80px;
+  display: block;
 }
 body .font {
   font-family: "Gloria Hallelujah", cursive;
@@ -87,7 +88,7 @@ body header .logo #website {
 body .main-body {
   font-size: 25px;
   margin-top: 280px;
-  margin-bottom: 220px;
+  margin-bottom: 130px;
 }
 body .main-body .underline {
   text-decoration: underline;
@@ -107,16 +108,15 @@ body .main-body .contact div {
 body footer {
   background-color: black;
   height: 8rem;
-  position: absolute;
   bottom: 0;
   width: 100%;
   font-size: 24px;
   text-align: center;
   color: #4e4e50;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 body footer div {
-  margin-top: 20px;
+  padding-top: 40px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -130,7 +130,10 @@ body footer div {
     margin-top: 130px;
   }
   body footer {
-    font-size: 16px; 
+    margin-top: 30px;
+  }
+  body footer div {
+    padding-top: 0;
   }
 }
 
