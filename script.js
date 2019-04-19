@@ -1,5 +1,5 @@
 
-$('document').ready(function() {
+$('window').ready(function() {
     playAudio()
 
     $('[toggle-target]').on('click', function(e) {
