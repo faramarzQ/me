@@ -1,6 +1,8 @@
 
 $('window').ready(function() {
-    playAudio()
+    // playAudio()
+
+    setTimeout(function() { playAudio() }, 2000);
 
     $('[toggle-target]').on('click', function(e) {
         var target = e.currentTarget.attributes['toggle-target'].value
