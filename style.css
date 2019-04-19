@@ -4,7 +4,7 @@
 }
 
 body {
-  color: white;
+  color: #ccc;
   background-color: #1A1A1D;
   width: 100% !important;
   height: 100%;
@@ -54,6 +54,9 @@ body .light-red {
 body .red {
   color: #C3073F;
 }
+body .bg-red {
+  background-color: #C3073F;
+}
 body .min-red {
   color: #950740;
 }
@@ -73,6 +76,11 @@ body li::before {
 }
 body a {
   color: white;
+}
+body .song-container {
+  position: sticky;
+  top: 0.4rem;
+  margin-left: 0.4rem;
 }
 body header {
   padding-top: 100px;
@@ -101,6 +109,9 @@ body .main-body .underline {
 body .main-body h2 {
   margin-top: 100px !important;
 }
+body .main-body .toggle {
+  display: none;
+}
 body .main-body ul {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -123,6 +134,9 @@ body footer {
 }
 
 @media only screen and (max-width: 900px) {
+  body .song-container {
+    position: relative;
+  }
   body header {
     padding-top: 40px;
   }
@@ -134,7 +148,7 @@ body footer {
   }
   body footer {
     margin-top: 20px;
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 0;
   }
 }
 
