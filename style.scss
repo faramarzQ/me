@@ -40,16 +40,17 @@ body {
     }
 
     .container {
-        margin-top: 80px;
+        // margin-top: 80px;
         display: block;
     }
 
     .font {
-        font-family: 'Gloria Hallelujah', cursive;
+        font-family: 'kalam', cursive;
+        font-weight: 600;
     }
 
     .font-main {
-        font-family: 'Bad Script', cursive;
+        font-family: 'Kalam', cursive;
     }
 
     .light-red {
@@ -90,11 +91,11 @@ body {
         color: white;
     }
 
-    .song-container {
-        position: sticky;
-        top: 0.4rem;
-        margin-left: 0.4rem;
-    }
+    // .song-container {
+    //     position: sticky;
+    //     top: 0.4rem;
+    //     margin-left: 0.4rem;
+    // }
 
     // head1
     header {
@@ -102,10 +103,11 @@ body {
         text-align: center;
 
         .logo {
-            font-family: 'Signika', sans-serif;
+            font-family: 'Bad Script', cursive;
             margin-top: 20px;
             text-align: center;
             margin: auto;
+            display: block;
 
             h1 {
                 font-size: 5rem;
@@ -135,8 +137,8 @@ body {
         }
 
         ul {
-            margin-top: 30px;
-            margin-bottom: 30px;
+            margin-top: 12px;
+            margin-bottom: 15px;
         }
 
         .contact {

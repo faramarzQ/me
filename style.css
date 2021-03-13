@@ -39,14 +39,14 @@ body ::-webkit-selection {
   color: #fff;
 }
 body .container {
-  margin-top: 80px;
   display: block;
 }
 body .font {
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: "kalam", cursive;
+  font-weight: 600;
 }
 body .font-main {
-  font-family: "Bad Script", cursive;
+  font-family: "Kalam", cursive;
 }
 body .light-red {
   color: #e7717d;
@@ -77,20 +77,16 @@ body li::before {
 body a {
   color: white;
 }
-body .song-container {
-  position: sticky;
-  top: 0.4rem;
-  margin-left: 0.4rem;
-}
 body header {
   padding-top: 100px;
   text-align: center;
 }
 body header .logo {
-  font-family: "Signika", sans-serif;
+  font-family: "Bad Script", cursive;
   margin-top: 20px;
   text-align: center;
   margin: auto;
+  display: block;
 }
 body header .logo h1 {
   font-size: 5rem;
@@ -113,8 +109,8 @@ body .main-body .toggle {
   display: none;
 }
 body .main-body ul {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 12px;
+  margin-bottom: 15px;
 }
 body .main-body .contact a,
 body .main-body .contact div {

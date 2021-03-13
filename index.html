@@ -11,248 +11,378 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"> </script>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet"> 
 
-    <audio id="song">
-        <source src="Foals - Late Night (Solomun Remix).mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-    </audio>
 <body>
-    <div class="song-container">
-        <button id="play" class="song btn btn-sm text-white bg-red" onclick="playAudio()"><i class="fa fa-play"></i></button>
-        <button id="pause" class="song btn btn-sm text-white bg-red" style="display:none" onclick="pauseAudio()"><i class="fa fa-pause"></i></button>
-    </div>
 
+    <!-- 
+        start of Body header
+     -->
     <header class="container font">
         <div class="row justify-content-md-center">
             <div class="logo">
                 <h1 class="red size font">Fa<span class="min-red">r</span>am<span class="min-red">ar</span>z<span class="min-red">'s</span></h1>
-                <h1 id="website" class="grey font size">Webpage</h1>
+                <h1 class="grey font size">CV Website</h1>
             </div>
+        </div>
+        <div class="row justify-content-md-center">
             <div class="mt-5">
-                <h3 >Hi there! Welcome to my webpage, make yourself at home.</h3>
+                <h3 >Hi there! Welcome to my <span class="min-red">CV website</span>, make yourself at home.</h3>
             </div>
         </div>
     </header>
+    <!-- 
+        end of Body header
+     -->
 
+    <!-- 
+        start of Body content
+     -->
     <div class="container main-body font-main">
         <p>
-            My name is Faramarz Qoshchi,<br>
-            what you see is a body crafted to the perfection and i've made it to show you what i'm doing and what i'm up to,<br>
-            would be so happy if you stay with me here, so lets jst scroll down.
+            My name is Faramarz Qoshchi and i'm 24 years old,<br>
+            I'm a Web application developer and Student of M.sc in Software engineering.</br>
+            I love Software Engineering, clean Programming, Solving Problems, Managing My myself and my environment,
+            Improving myself, Learning new things and also My loneliness .
         </p>
 
-        <h2 class="min-red m-4 underline" toggle-target="me">About me</h2>
-        <p class="toggle" id="me">
-            Well, I'm a virg..., oh my word, what am i doing!!!<br>
-            obviously i'm a boy, a kurdish boy from Iran, Kurdistan. i was born on 21.1.1997 so i'm about 23 years old.<br>
-            and if you want to see my face, check out my instagram, you can find some pictures there, links are down the page.
-        </p>
+        <h2 class="min-red m-4 underline" toggle-target="educations">My Educations</h2>
+        <div class="toggle" id="educations">
+            In 2014 i got applied in Software engineering at <a href="https://en.uok.ac.ir/EN.aspx" style="text-decoration: underline">University of kurdistan</a><br>
+            
+            <ul>
+                <li>
+                    <span class="min-red" toggle-target="bachelor">Bachelor of Computer(Software) engineering</span>
+                    <ul class="toggle" id="bachelor">
+                        <li>From 2014 to 2019</li>
+                        <li>GPA: 16</li>
+                        <li>Bachelor's project: Topic detection on Twitter's dataset using Python</li>
+                        <li>Important Courses:
+                            <ul>
+                                <li>Data Structures and Algorithms</li>
+                                <li>Software engineering</li>
+                                <li>Network</li>
+                                <li>Operating systems</li>
+                                <li>Computer architecture</li>
+                                <li>Artificial intelligence</li>
+                                <li>Compiler implementation</li>
+                                <li>Data Mining</li>
+                                <li>Information Retrieval</li>
+                                <li>Social Networks</li>
+                                <li>Discrete mathematics</li>
+                                <li>Engineering mathematics</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
 
-        <h2 class="min-red m-4 underline" toggle-target="educations">My educations</h2>
-        <p class="toggle" id="educations">
-            I'm Student of Master's degree in Software Engineering at <a href="https://en.uok.ac.ir/EN.aspx" style="text-decoration: underline">University of kurdistan,</a><br>
-            i also got my bachelor's degree at UOK.
-        </p>
+                <li>
+                    <span class="min-red" toggle-target="msc">M.Sc of Software(Data) engineering</span>
+                    <ul class="toggle" id="msc">
+                        <li>From 2020 to present</li>
+                        <li>GPA: 18.89</li>
+                        <li>Thesis: Hybrid Recommender systems based on Deep learning</li>
+                        <li>Important Courses:
+                            <ul>
+                                <li>Cloud Computing</li>
+                                <li>Advanced Algorithms and Data structures</li>
+                                <li>Advanced Software engineering</li>
+                                <li>Pervasive systems</li>
+                                <li>Advanced Data mining</li>
+                                <li>Mining of Massive datasets</li>
+                                <li>Advanced Operating systems</li>
+                                <li>Advanced Networks</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
-        <h2 class="min-red m-4 underline" toggle-target="skills">My skills</h2>
+        </div>
+
+        <h2 class="min-red m-4 underline" toggle-target="skills">My Skills</h2>
         <div class="toggle" id="skills">
-            <p>
-                Well, in 3th Semester at uni i began everything with Android Developing, but after a while for some reasons i lost intrest in Android,
-                then after one year, i started web developing. at first, i just wanted to become a front-end developer, a designer,<br>
-                so i learned these techs:<br>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>SASS - SCSS</li>
-                    <li>Jquery</li>
-                    <li>Vue.js</li>
-                    <li>Bootstrap</li>
-                    <li>Bulma.css</li>
-                </ul>
-            </p>
-            <p>
-                but after a while, i told myself, <q class="red">i didn't study 4 years in a God Damned University to become a designer!!!!</q>,<br>
-                haha just kidding, <small>in case u r a designer</small>, so i started back-end developing too.<br>
-                Below is a list of technologis i learnt:
-                <ul>
-                    <li>PHP</li>
-                    <li>Laravel</li>
-                    <li>Node.js</li>
-                    <li>Lumen</li>
-                    <li>MYSQL</li>
-                    <li>Git</li>
-                    <li>python</li>
-                </ul>
-            </p>
-            <p>
-                then suddenly..., i found myself a <span class="red">Full-Stack Developer</span>, and at the time you are reading this, i'm working on it hardly.<br>
-                OS was a real challenge for me, Windows was not what i needed, i allways wanted to costumize my stuffs, so i started working with LINUX OS.<br>
-                I began with <span class="red">Ubuntu</span>, then after a while i decided to taste something else, so <span class="red">Fedora</span> was the next,<br>
-                but fedora was a hell of an OS, Full of bugs, then i went for another stable and cool one, i installed the GOD, a God to rule them all, <span class="red">Debian</span>.<br>
-                besides programming, as you see my english is not bad, and trying to keep it up.
-            </p>
+
+            <div>
+                <p>
+                    in 2014 I coded My Hello world in <span class="min-red">C++</span>, then i Started <span class="min-red">Android Development</span> but didn't continued it, </br>
+                    in 2015 I started Web Development toward being a <span class="min-red"> Full-stack developer</span>,
+                    following are technologies i'm fluent and experienced in:
+                    <ul>
+                        <li>
+                            <span class="min-red" toggle-target="front_end">Front-end web development</span>
+                            <ul class="toggle" id="front_end">
+                                <li>HTML</li>
+                                <li>CSS, SASS</li>
+                                <li>Bootstrap</li>
+                                <li>Javascript & NPM & Webpack</li>
+                                <li>Jquery</li>
+                                <li>Vue.js
+                                    <ul>
+                                        <li>Vue-router</li>
+                                        <li>VueX</li>
+                                    </ul>
+                                </li>
+                                <li>SPA, MPA, WPA Architectures</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="min-red" toggle-target="back_end">Back-end web development</span>
+                            
+                            <ul class="toggle" id="back_end">
+                                <li>PHP</li>
+                                <li>
+                                    Laravel & Lumen
+                                    <ul>
+                                        <li>Dependency Injection Containers, Service Providers</li>
+                                        <li>Middlewares</li>
+                                        <li>Event & Listeners</li>
+                                        <li>Queues</li>
+                                        <li>Blade Engine</li>
+                                        <li>Elequent ORM</li>
+                                        <li>Unit tests</li>
+                                        <li>Migrations & Seeders</li>
+                                        <li>Mails & Notifications</li>
+                                        <li>Error handling</li>
+                                        <li>Auth</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Node.js
+                                    <ul>
+                                        <li>Express</li>
+                                        <li>Sequelize</li>
+                                        <li>Socket.io</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Database
+                                    <ul>
+                                        <li>
+                                            MySQL
+                                            <ul>
+                                                <li>Queries</li>
+                                                <li>Nested SQLs</li>
+                                                <li>ER DB Model</li>
+                                                <li>Normalization</li>
+                                                <li>Views</li>
+                                                <li>Relations, Keys, Indexes</li>
+                                                <li>Standard Designing principles</li>
+                                                <li>PhpMyadmin, Metabase, CLI tools</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Redis
+                                            <ul>
+                                                <li>CLI & in-language</li>
+                                                <li>Setting, getting, Expiring</li>
+                                                <li>Data structures</li>
+                                                <li>Persistance</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <span class="min-red" toggle-target="systems">Data Field & Recommender systems</span>
+                            <ul class="toggle" id="systems">
+                                <li>Database and Warehouses </li>
+                                <li>Data Mining Techniques</li>
+                                <li>Machine learning Algorithms</li>
+                                <li>Data preprocessing techniques</li>
+                                <li>Classification, Clustering & Predicting techniques</li>
+                                <li>Neural Networks</li>
+                                <li>Recommender systems
+                                    <ul>
+                                        <li>Content-base RSs</li>
+                                        <li>collaborative-filtering RSs</li>
+                                        <li>Hybris RSs</li>
+                                        <li>Knowledge-base RSs</li>
+                                        <li>Decompositions Techniques (SVD & MF)</li>
+                                    </ul>
+                                </li>
+                                <li>Python programming Language
+                                    <ul>
+                                        <li>SciPy</li>
+                                        <li>MatplotLib</li>
+                                        <li>Numpy and Pandas</li>
+                                        <li>beautiful-soap</li>
+                                        <li>Jupiter</li>
+                                        <li>MySql connection</li>
+                                        <li>OOP</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <span class="min-red" toggle-target="systems">Systems & Platforms</span>
+                            
+                            <ul class="toggle" id="systems">
+                                <li>Linux Ubuntu, Debian</li>
+                                <li>Linux CentOS, Fedora</li>
+                                <li>Virtualization and Containerization(Docker & Kubernetes)</li>
+                                <li>Distributed systems</li>
+                                <li>SOA</li>
+                                <li>Static & Dynamic Microservices</li>
+                                <li>Orchestration & Choreography</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <span class="min-red" toggle-target="software_development">Software Development & Management</span>
+                            
+                            <ul class="toggle" id="software_development">
+                                <li>Clean Code and Architecture</li>
+                                <li>Design patterns and anti patterns</li>
+                                <li>Code refactoring</li>
+                                <li>Software reflection</li>
+                                <li>Data structures and Algorithms</li>
+                                <li>Software testing</li>
+                                <li>RESTful APIs</li>
+                                <li>Test driven development</li>
+                                <li>Software as a Service</li>
+                                <li>Waterfall And Agile development techniques</li>
+                                <li>Scrum Methodology</li>
+                                <li>Git source control using Gitlab and Github servers</li>
+                                <li>OOP and Functional paradigms</li>
+                                <li>Unified Modeling Language</li>
+                                <li>MVC architecture</li>
+                                <li>Trello Kanban board</li>
+                                <li>Jira & Confluence Project management techniques</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+            </div>
         </div>
 
-        <h2 class="min-red m-4 underline" toggle-target="works">My works</h2>
-        <p class="toggle" id="works">
-            Actualy, since i began programming, i spend most of my time on learning and enjoying,
-            but right now, i'm a Full-Stack developer at <a href="https://snaagrin.ir" style="text-decoration: underline">Snaagrin company</a> company, im handling it's API, front-end of website, back-end and it's server's security.<br>
-            besides that i have done several academic projects which u can find on my github.. . i also like data science in python and there are several project i've dont on twitter's raw data but not sure if thats what i hold over in future.
-        </p>
-
-        <h2 class="min-red m-4 underline" toggle-target="future">My future</h2>
-        <p class="toggle" id="future">
-            I have real plans for future. space and time is not a limit for me. in every single possibility, i'll be a winner!!. <q class="red">I wanna represent the posibilities. i wanna represent the idea that i can create whatever i wanna create :)</q>.
-            thats enough to know.
-        </p>
-
-        <h2 class="min-red m-4 underline" toggle-target="style">My Style</h2>
-        <p class="toggle" id="style">
-            My style is impetuous, my defense is impregnable. i am the defenition of Unstoppable, i am the man of overindulgence, theres no one that can stop me. i acheive whatever i wanna acheive.
-            i allways desire for an higher room, make myself the most hardwork person in that room and leave it as i am the most successful one in it. lets just be honest, you can not outwork me.<br>
-            <q class="red">i am commited to what i love, what i love is what i do. what i do is what makes me better and i love being better.</q> <br>
-            also in software development, i am obsessed with what i do, thats why i like to implement standard codes, using optimal algorithms and data structures in the best way i can.
-
-        </p>
-
-        <h2 class="min-red m-4 underline" toggle-target="loves">My Loves</h2>
-        <div class="toggle" id="loves">
-            <p>
-                Lets not get sentimental but i LOVE , I realy LOVE, (the subject is not unknown here, just unsaid),  <br>
-                here are some of the fields i LOVE:  <br>
-                <h4>Music Genres</h4>
-                <ul>
-                    <li>Hardstyle</li>
-                    <li>Psychodelic trance</li>
-                    <li>High tripping Tech minimal</li>
-                    <li>Techno</li>
-                    <li>Rock</li>
-                    <li>Hardcore</li>
-                    <li>Frenchcore</li>
-                    <li>Tech house</li>
-                    <li>Deep house</li>
-                    <li>Lounge house</li>
-                    <li>Dear deer</li>
-                    <li>Acid Tech</li>
-                    <li>Electronic Dance</li>
-                </ul>
-                <h4>Music Artist & Bands</h4>
-                <ul>
-                    <li>Linkin park</li>
-                    <li>Amilie lens</li>
-                    <li>Astrix</li>
-                    <li>Thirty seconds to mars</li>
-                    <li>Nina kraviz</li>
-                    <li>Static x</li>
-                    <li>AC/DC</li>
-                    <li>Charlotte De witte</li>
-                    <li>Solomun</li>
-                    <li>She past away</li>
-                    <li>Disturbed</li>
-                    <li>Adam Bayer</li>
-                    <li>Metalica</li>
-                    <li>Neelix</li>
-                    <li>Astral</li>
-                    <li>Hugo kant</li>
-                    <li>Ksina meow</li>
-                    <li>Dr peacock</li>
-                    <li>Xiena</li>
-                    <li>Evanesence</li>
-                    <li>Liquid soul</li>
-                    <li>Melting point</li>
-                    <li>Coldplay</li>
-                    <li>Muse</li>
-                    <li>Headhunters</li>
-                    <li>Stephan bodzin</li>
-                    <li>Boris Brejcha</li>
-                    <li>Anna</li>
-                    <li>Miss monique</li>
-                    <li>ksina meow</li>
-                    <li>Imagine dragons</li>
-                    <li>Ajja</li>
-                    <li>Angerfist</li>
-                    <li>Hozho</li>
-                    <li>Ann Clue</li>
-                    <li>Muse</li>
-                    <li>Avicii</li>
-                    <li>Miss k8</li>
-                </ul>
-                <h4>Movies</h4>
-                <ul>
-                    <li>The Lord of the Rings</li>
-                    <li>Harry potter</li>
-                    <li>Fight club</li>
-                    <li>The big Lebowski</li>
-                    <li>God Father</li>
-                    <li>Pulp fiction</li>
-                    <li>No country for old men</li>
-                    <li>Breaking bad</li>
-                    <li>The shawshank redemption</li>
-                    <li>Brave heart</li>
-                    <li>The Nightcrawler</li>
-                    <li>The Intouchables</li>
-                    <li>Kill bill</li>
-                    <li>The Pursuit of Happyness</li>
-                    <li>The pianist</li>
-                    <li>The Hatefull eight</li>
-                    <li>Memento</li>
-                    <li>Dog day afternoon</li>
-                    <li>One flew over the Cukoo's Nest</li>
-                    <li>The big short</li>
-                    <li>Drive</li>
-                </ul>
-            </p>
-
+        <h2 class="min-red m-4 underline" toggle-target="works">My Experiences</h2>
+        <div class="toggle" id="works">
+            <ul>
+                <li class="min-red" toggle-target="sharinoo">Sharinoo</li>
+                <div class="toggle" id="sharinoo">
+                    My first Job experience was with a successful startup, <link href="snaagrin.ir">Sharinoo (Snaagrin)</link>.
+                    I worked there for 2 years (2018 to 2020) as the head of Web Developers, and project Manager. i faced and handled lots of challenges there.
+                    Sharinoo offers many services including Job finder and posting, Location finder, Medical consultant, Amusement Competition, Advertisements and etc.
+                    following is a list of challenges i faced:
+                    <ul>
+                        <li>Optimizing the backend of application, including Optimizing DB Structure and Queries, Optimizing Laravel's performance, Speeding up APIs and etc.</li>
+                        <li>Implementing And managing the Backend of application which included several phases, versions and applications</li>
+                        <li>Managing the Server-side developers, Android developers and Data analyst teams using Scrum</li>
+                        <li>Teaching the process and techniques of software development</li>
+                        <li>Implementing real-time Chat application using Node.js and Socket.io</li>
+                        <li>Implementing a Data saver system which tracks users in the application</li>
+                        <li>Implementing a Monitoring system which monitors user's activities and business related data in the applications</li>
+                        <li>Implementing a Recommender system based on user content and relevant user-item contents</li>
+                        <li>Implementing a congestion control system because of massive burden on server during Advertisements</li>
+                    </ul>
+                </div>
+                
+                <li class="min-red" toggle-target="razi">Razi university of kermanshah</li>
+                <div class="toggle" id="razi">
+                    The second company i worked with was <a class="underline" href="https://khedmat.razi.ac.ir/">Razi university of Kermanshah</a> which is one of the top universities in technology field in Iran
+                    during 4 month in this Organizationi i developed on 2 projects, one was <a class="underline" href="https://khedmat.razi.ac.ir/">the Management Desk of the university</a> and a reporting system for <a class="underline" href="https://www.igmc.ir/partner-companies-entities/aT/ViewType/PtID/52">West Regional Electric Company of Iran</a>.
+                </div>
+                
+                <li class="min-red" toggle-target="bdok">Bdok</li>
+                <div class="toggle" id="bdok">
+                    <a class="underline" href="https://bdok.ir">Bdok</a> is the top online store builder in Iran, Tehran. i got employed in this company from january 2020 as a full-stack developer.
+                    Bdok is a well grown company which provides online shopping Software as a service to Business owners to help them grow their business without being involved in it's technical issues.</br>
+                    We developed the software using Scrum and Kanban methodologies and constant backlog Meetings. following is a list of challenges i faced:
+                    <ul>
+                        <li>Optimizing the Database of the application which improved it's performance about 70 percents</li>
+                        <li>Caching time-consuming and static Queries using Redis</li>
+                    </ul>
+                </div>
+                
+                <li class="min-red" toggle-target="academic_projects">Academic projects</li>
+                <div class="toggle" id="academic_projects">
+                    I've also done many projects during my bachelor and master's degree which i open-sourced them on my <a href="https://github.com/faramarzQ">github</a>. here is a list of bold ones:
+                    <ul>
+                        <li>
+                            <a href="https://github.com/faramarzQ/cloud_assisted_resource_allocation_using_machine_learning">Cloud assisted resource allocation using machine learning in python</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/faramarzQ/a_new_coding_decoding_algorithm">A coding decoding algorithm using Q-matrix in python</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/faramarzQ/hangman_game_on_sinatra">The hangman game in Sinatra ruby framework</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/faramarzQ/hospital_finding_problem">A hospital finding app using Dijkstra algorithms in javascript and python</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/faramarzQ/Topic_detection">A topic detection app using Twitter's data in python</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/faramarzQ/graph_coloring">A graph coloring app using Greedy and Degree Heuristic algorithms in python</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/faramarzQ/Multitask-scheduling">A multitask scheduling app with task dependency in python </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/faramarzQ/Natural_Language_Processing">A natural Language processing technique using Persian poems Data in python</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/faramarzQ/tic_toc_toe_greedy_algorithm">The Tic-tac-toe game using greedy algorithm using javascript</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/faramarzQ/DBMS_java">A Database Management System on java, checks if transaction is Serializable, 2PL Serializable and deadend exists</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </ul>
         </div>
-
+        
 
         <h2 class="min-red m-4 underline" toggle-target="contact">Contact me</h2>
         <div class="toggle" id="contact">
-            you can find me almost everywhere virtualy so here's some Links so u can follow or contact me:<br>
-
             <div class="contact col-sm-5">
                 <div>
-                    <a href="https://www.facebook.com/faramarz" target="_blank">
-                        <i class="fa fa-facebook-square mr-1"></i> <span>faramarz.q0</span>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/faramarz_q" target="_blank">
-                        <i class="fa fa-instagram mr-1"></i> <span>faramarz_q</span>
-                    </a>
-                </div>
-                <div>
                     <a href="https://github.com/faramarzQ" target="_blank">
-                        <i class="fa fa-github mr-1"></i> <span>faramarzq</span>
+                        <i class="fa fa-github mr-2"></i> <span>Github</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://stackexchange.com/users/9936075/faramarz?tab=accounts" target="_blank">
+                        <i class="fa fa-stack-exchange mr-2"></i> <span>Stackexchange</span>
                     </a>
                 </div>
                 <div>
                     <a href="https://www.linkedin.com/in/faramarz-q/">
-                        <i class="fa fa-linkedin mr-1"></i> <span>faramarz-q</span>
+                        <i class="fa fa-linkedin mr-2"></i> <span>Linkedin</span>
                     </a>
                 </div>
                 <div>
                     <a href="https://www.telegram.me/faramarz_q" target="_blank">
-                        <i class="fa fa-telegram mr-1"></i> <span>faramarz_q</span>
+                        <i class="fa fa-telegram mr-2"></i> <span>Telegram</span>
                     </a>
                 </div>
                 <div>
-                    <i class="fa fa-envelope mr-1"></i><span> faramarzqoshchi@hotmail</span>
+                    <i class="fa fa-envelope mr-2"></i> <span>faramarzqoshchi@gmail.com</span>
                 </div>
             </div>
-
-            <p class="mt-4">thats it. thank you so much for your time, i appreciate it. have a nice day. <i class="fa fa-heart text-danger"></i></p>
         </div>
 
     </div>
+    <!-- 
+        end of Body content
+     -->
 
+    <!-- 
+        Footer
+     -->
     <footer class="font-main">
         This website is created by <span class="font">Faramarz Q</span>, Live on Github Servers
     </footer>
